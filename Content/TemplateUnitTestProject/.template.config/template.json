@@ -1,0 +1,210 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Pygmalions",
+    "classifications": [
+        "Test",
+        "NUnit",
+        "Moq"
+    ],
+    "groupIdentity": "Pygmalions.Template",
+    "identity": "Pygmalions.Template.UnitTest",
+    "name": "PygmalionsUnitTestTemplate",
+    "shortName": "punittest",
+    "sourceName": "TemplateUnitTestProject",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": true,
+    "symbols": {
+        "EnablePack": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Whether to allow packing this project into a NuGet package (via (\"dotnet pack\")."
+        },
+        "Framework": {
+            "type": "parameter",
+            "description": "Target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net9.0",
+                    "description": ".NET 9.0"
+                },
+                {
+                    "choice": "net8.0",
+                    "description": ".NET 8.0"
+                },
+                {
+                    "choice": "net7.0",
+                    "description": ".NET 7.0"
+                },
+                {
+                    "choice": "net6.0",
+                    "description": ".NET 6.0"
+                },
+                {
+                    "choice": "net5.0",
+                    "description": ".NET 5.0"
+                },
+                {
+                    "choice": "netcoreapp3.1",
+                    "description": ".NET Core 3.1"
+                },
+                {
+                    "choice": "net35",
+                    "description": ".NET Framework 3.5"
+                },
+                {
+                    "choice": "net40",
+                    "description": ".NET Framework 4.0"
+                },
+                {
+                    "choice": "net45",
+                    "description": ".NET Framework 4.5"
+                },
+                {
+                    "choice": "net451",
+                    "description": ".NET Framework 4.5.1"
+                },
+                {
+                    "choice": "net452",
+                    "description": ".NET Framework 4.5.2"
+                },
+                {
+                    "choice": "net46",
+                    "description": ".NET Framework 4.6"
+                },
+                {
+                    "choice": "net461",
+                    "description": ".NET Framework 4.6.1"
+                },
+                {
+                    "choice": "net462",
+                    "description": ".NET Framework 4.6.2"
+                },
+                {
+                    "choice": "net47",
+                    "description": ".NET Framework 4.7"
+                },
+                {
+                    "choice": "net471",
+                    "description": ".NET Framework 4.7.1"
+                },
+                {
+                    "choice": "net472",
+                    "description": ".NET Framework 4.7.2"
+                },
+                {
+                    "choice": "net48",
+                    "description": ".NET Framework 4.8"
+                }
+            ],
+            "replaces": "@FrameworkVersion",
+            "defaultValue": "net8.0"
+        },
+        "C# Version": {
+            "type": "parameter",
+            "description": "C# version for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "preview",
+                    "description": "C# Preview of Next Version (preview)"
+                },
+                {
+                    "choice": "latestmajor",
+                    "description": "C# Latest Major (latestmajor)"
+                },
+                {
+                    "choice": "default",
+                    "description": "C# Latest Minor (default)"
+                },
+                {
+                    "choice": "latest",
+                    "description": "C# Latest Minor (latest)"
+                },
+                {
+                    "choice": "13",
+                    "description": "C# 13.0"
+                },
+                {
+                    "choice": "12",
+                    "description": "C# 12.0"
+                },
+                {
+                    "choice": "11",
+                    "description": "C# 11.0"
+                },
+                {
+                    "choice": "10",
+                    "description": "C# 10.0"
+                },
+                {
+                    "choice": "9",
+                    "description": "C# 9.0"
+                },
+                {
+                    "choice": "8",
+                    "description": "C# 8.0"
+                },
+                {
+                    "choice": "7.3",
+                    "description": "C# 7.1"
+                },
+                {
+                    "choice": "7.2",
+                    "description": "C# 7.2"
+                },
+                {
+                    "choice": "7.1",
+                    "description": "C# 7.1"
+                },
+                {
+                    "choice": "7",
+                    "description": "C# 7.0"
+                },
+                {
+                    "choice": "6",
+                    "description": "C# 6.0"
+                },
+                {
+                    "choice": "5",
+                    "description": "C# 5.0"
+                },
+                {
+                    "choice": "4",
+                    "description": "C# 4.0"
+                },
+                {
+                    "choice": "3",
+                    "description": "C# 3.0"
+                },
+                {
+                    "choice": "ISO-2",
+                    "description": "C# ISO-2"
+                },
+                {
+                    "choice": "ISO-1",
+                    "description": "C# ISO-1"
+                }
+            ],
+            "replaces": "@LanguageVersion",
+            "defaultValue": "default"
+        }
+    },
+    "postActions": [
+        {
+            "condition": "(!skipRestore)",
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}

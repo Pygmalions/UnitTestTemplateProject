@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pygmalions.Template.UnitTest", "Pygmalions.Template.UnitTest.csproj", "{F77094EA-0981-4E5D-B88E-27730129A1A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{D694E100-5B4B-4969-9B3C-E341D28A270A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateUnitTestProject", "Content\TemplateUnitTestProject\TemplateUnitTestProject.csproj", "{80FE4741-521A-40D2-8BE4-2ABC754F071F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77094EA-0981-4E5D-B88E-27730129A1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77094EA-0981-4E5D-B88E-27730129A1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77094EA-0981-4E5D-B88E-27730129A1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77094EA-0981-4E5D-B88E-27730129A1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FE4741-521A-40D2-8BE4-2ABC754F071F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FE4741-521A-40D2-8BE4-2ABC754F071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FE4741-521A-40D2-8BE4-2ABC754F071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FE4741-521A-40D2-8BE4-2ABC754F071F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80FE4741-521A-40D2-8BE4-2ABC754F071F} = {D694E100-5B4B-4969-9B3C-E341D28A270A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1D72225-05D1-448B-A2A7-BD34C6A32BB6}
+	EndGlobalSection
+EndGlobal
